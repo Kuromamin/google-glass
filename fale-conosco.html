@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<head lang="PT-BR">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/form.css">
+    <title>Tudo sobre Google Glass</title>
+
+
+
+
+
+<style>
+body{
+    background-color: white;
+    background-size: 4000px;
+    font-family: arial, sans-serif;
+}   
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    }
+a{
+color: #606060;
+text-decoration: none;
+
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+figure.foto-legenda{
+    position: relative;
+    border: 3px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 380px;
+    height: auto;
+    right:35px;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+figure.foto-legenda figcaption{
+    background-color: rgba(0,0,0,.4);
+    position:absolute;
+    top:0px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    opacity: 0;
+    pointer-events: none;
+    padding: 10px;
+    box-sizing: border-box;  
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* formatação nav */ /* toda vez q tiver um id, trocar pela # */
+nav#menu ul{
+list-style: none;
+text-transform: uppercase; /* deixa tudo em maiucuslo*/
+position: absolute; /* posso mover para onde eu quiser*/
+top: 0px;
+right: 300px;
+}
+nav#menu li{
+    display: inline-block; /*deixa um na frente do outro*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu{
+    display: block;
+}
+nav#menu h1{
+display: none;
+}
+nav#menu li:hover{
+    background-color: #606060;
+    text-decoration: underline;
+}
+nav#menu a{
+    color: black;
+    text-decoration:none;
+}
+nav#menu a:hover{
+    color: white;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height:179px;
+    background-image:url(glass-logo-peq.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: left center;
+}
+header#cabecalho img#icone{
+position:absolute;
+left:85%;
+top:10px;
+}
+header#cabecalho h1{
+    font-family:"fontlogo", sans-serif;
+    font-size: 30px;
+    color: #606060 ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+   font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+@font-face{
+    font-family:"fontlogo";
+    src: url("bubblegum-sans-regular.otf");
+}
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+aside#lateral{
+    display:block;
+    width:300px;
+    float:right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+footer#rodape{
+
+    clear: both;
+    border-top: 1px solid black;
+}
+footer#rodape{
+    text-align:center;
+
+}
+table#tabela{
+
+    border: 1px solid grey;
+ border-spacing:0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+table#tabela td{
+
+    border: 1px solid grey;
+    padding:10px;
+    text-align: center;
+}
+table#tabela td.ce{
+color:white;
+background-color:grey;
+vertical-align: top;
+font-weight:bold;
+}
+table#tabela td.cd{
+    background-color: #cecece;
+
+
+}
+table#tabela caption{
+    color: #888888;
+    font-size: 15px;
+    font-weight: bolder;
+}
+table#tabela caption span{
+    display:block;
+    float:right;
+    color:black;
+    font-size:10px;
+    margin-top:10px;
+}
+
+article#noticia h2{
+    font-size: 15px;
+    color: grey;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 10px;
+}
+header#cabecalho-artigo h1  {
+
+font-family: "fontlogo", sans-serif ;
+font-size: 35px;
+color: #606060;
+
+
+}
+header#cabecalho-artigo h2  {
+font-size: 13px;
+color: #cecece;
+background-color: white;
+
+ 
+}
+
+header#cabecalho-artigo h3  {
+font-size: 12px;
+color: #606060;
+
+
+    }
+    .direita{
+        text-align: right;
+    }
+    aside#lateral h1{
+        font-family: "fontlogo", sans-serif;
+        font-size: 20px;
+        color: #606060;
+        margin-top: 0px;
+
+    }
+    aside#lateral h2{
+        background-color: #606060;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+
+    }
+   article#noticia-principal {
+    padding-top: 30px;
+}
+article#cabecalho-artigo {
+    border-bottom: 1px #606060 solid;
+    padding-bottom: 20px;
+}
+header#cabecalho-artigo {
+    padding: 50px 0 20px 0;
+}
+nav#menu{
+    padding: 50px 0 20px 0;
+}
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<script> 
+function mudaFoto (foto){
+document.getElementById("icone").src= foto;
+
+}
+
+</script>
+<script>
+     function calc_total() {
+        var qtd = parseInt(document.getElementById('cquan').value);
+        tot = qtd * 1500;
+        document.getElementById('ctot').value = tot; 
+     }
+</script>
+<body>
+    <div id="interface"> 
+
+    <header id="cabecalho">
+
+        <h1>Google Glass</h1>
+<h2>A revolução do Google está chegando</h2>
+
+<img id="icone" src="_imagens/multimidia.png" style="width:200px; height:200px;"> &nbsp;
+
+<nav id="menu">
+
+<h2>Menu Principal</h2>
+<ul type="disc">
+<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="index.html">Home</a></li>
+<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="multimidia.html">Multimídia</a></li>
+<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/contato.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+
+</ul>
+</nav>
+</header>
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header  id="cabecalho-artigo">
+            
+
+<h3>Fale Conosco > Contato</h3>
+<h1>Formulário de Contato</h1>
+<h3 class="direita"> Atualizado 2026 </h3>
+</header>
+
+<form method="post" id="fcontato" action="mailto:joaovictorteodoro49@gmail.com" oninput="calc_total();">
+    <fieldset id="usuario">
+        <legendc>Identificação do Usuário</legend>
+       <p><label for="cnome"> Nome: </label>
+        <input type="text" name="tnome" id="cnome" size="20" maxlength="30" placeholder="nome completo"></p>
+        <p><label for="csenha">Senha:</label>
+         <input type="password" name="tsenha" id="csenha" size="8" maxlength="8" placeholder="8 dígitos"></p>
+        <p><label for="cmail">E-mail:</label>
+         <input type="email" name="tmail" id="cmail" size="20" maxlength="40" ></p>
+        <fieldset id="sexo">
+            <legend>sexo:</legend>
+                    <input type="radio" name="tsexo" id="cmasc" value="masculino"> <label for="cmasc">Masculino</label><br>
+                    <input type="radio" name="tsexo" id="cfem" value="feminino"><label for="cfem">Feminino</label>
+                </fieldset>
+        <p><label for="cnasc">Data de Nascimento:</label>
+         <input type="date" name="tnasc"id="cnasc"></p>
+    </fieldset>
+
+<fieldset id="endereco">
+    <legend>Endereço do Usuário</legend>
+    <p><label for="crua">Logradouro:</label>
+        <input type="text" name="trua" id="crua" size="14" maxlength="80" placeholder="rua/avenida/travessa"></p>
+    <p><label for="cnum">Número:</label>
+     <input type="number" name="tnum" id="cnum" min="0" max="999999999999"></p>
+    <p><label for="cest">Estado:</label> 
+        <select name="test" id="cest">
+            <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS" selected>Rio Grande Do Sul</option>
+                    </optgroup>
+
+        </select></p>
+    <p><label for="ccid">Cidade:</label>
+    <input type="text" name="tcid" id="ccid" maxlength="40" size="20" placeholder="sua cidade" list="cidade"></p>
+    <datalist id="cidade">
+        <option value="Rio de Janeiro"></option>
+        <option value="Rio Pardinho"></option>
+        <option value="Niterói"></option>
+        <option value="Santa Cruz do Sul"></option>
+
+    </datalist>
+</fieldset>
+
+<fieldset id="mensagem">
+    <legend>Mensagem do Usuário</legend>
+    <p><label for="curg">Grau de Urgência:</label>
+        Mín<input type="range" name="turg" id="curg" min="0" max="15" step="2">Máx</p>
+    <p><label for="cmsg">Mensagem:</label>
+        <textarea name="tmsg" id="cmsg" cols="35" rows="5" placeholder="Deixe aqui a sua mensagem"></textarea></p>
+</fieldset>
+
+<fieldset id="pedido">
+    <legend>Quero um Google Glass</legend>
+    <p><input type="checkbox" name="tped" id="cped" checked>
+        <label for="cped"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p><label for="ccor">Cor:</label>
+        <input type="color" name="tcor" id="ccor" value="#0000FF"></p>
+    <p><label for="cquan">Quantidade:</label>
+        <input type="number" name="tquan" id="cquan" min="0" max="5" value="0"></p>
+    <p><label for="ctot">Preço Total: R$</label>
+        <input type="text" name="ttot" id="ctot" placeholder="Total a pagar" readonly></p>
+</fieldset>
+
+<input type="image" name="tenviar" src="_imagens/botao-enviar.png">
+</form>
+
+</article>
+</section>
+
+<footer id="rodape">
+<p>Copyright &copy; 2026 - by João Victor </br>
+</footer>
+</div>
+
+</body>
+</html>

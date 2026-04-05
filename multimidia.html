@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<head lang="PT-BR">
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/media.css">
+    <title>Tudo sobre Google Glass</title>
+
+
+
+
+
+<style>
+body{
+    background-color: white;
+    background-size: 4000px;
+    font-family: arial, sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    }
+a{
+color: #606060;
+text-decoration: none;
+
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+figure.foto-legenda{
+    position: relative;
+    border: 3px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 380px;
+    height: auto;
+    right:35px;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+figure.foto-legenda figcaption{
+    background-color: rgba(0,0,0,.4);
+    position:absolute;
+    top:0px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    opacity: 0;
+    pointer-events: none;
+    padding: 10px;
+    box-sizing: border-box;  
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* formatação nav */ /* toda vez q tiver um id, trocar pela # */
+nav#menu ul{
+list-style: none;
+text-transform: uppercase; /* deixa tudo em maiucuslo*/
+position: absolute; /* posso mover para onde eu quiser*/
+top: 0px;
+right: 300px;
+}
+nav#menu li{
+    display: inline-block; /*deixa um na frente do outro*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu{
+    display: block;
+}
+nav#menu h1{
+display: none;
+}
+nav#menu li:hover{
+    background-color: #606060;
+    text-decoration: underline;
+}
+nav#menu a{
+    color: black;
+    text-decoration:none;
+}
+nav#menu a:hover{
+    color: white;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height:179px;
+    background-image:url(glass-logo-peq.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: left center;
+}
+header#cabecalho img#icone{
+position:absolute;
+left:85%;
+top:10px;
+}
+header#cabecalho h1{
+    font-family:"fontlogo", sans-serif;
+    font-size: 30px;
+    color: #606060 ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+   font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+@font-face{
+    font-family:"fontlogo";
+    src: url("bubblegum-sans-regular.otf");
+}
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+aside#lateral{
+    display:block;
+    width:300px;
+    float:right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+footer#rodape{
+
+    clear: both;
+    border-top: 1px solid black;
+}
+footer#rodape{
+    text-align:center;
+
+}
+table#tabela{
+
+    border: 1px solid grey;
+ border-spacing:0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+table#tabela td{
+
+    border: 1px solid grey;
+    padding:10px;
+    text-align: center;
+}
+table#tabela td.ce{
+color:white;
+background-color:grey;
+vertical-align: top;
+font-weight:bold;
+}
+table#tabela td.cd{
+    background-color: #cecece;
+
+
+}
+table#tabela caption{
+    color: #888888;
+    font-size: 15px;
+    font-weight: bolder;
+}
+table#tabela caption span{
+    display:block;
+    float:right;
+    color:black;
+    font-size:10px;
+    margin-top:10px;
+}
+
+article#noticia h2{
+    font-size: 15px;
+    color: grey;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 10px;
+}
+header#cabecalho-artigo h1  {
+
+font-family: "fontlogo", sans-serif ;
+font-size: 35px;
+color: #606060;
+
+
+}
+header#cabecalho-artigo h2  {
+font-size: 13px;
+color: #cecece;
+background-color: white;
+
+ 
+}
+
+header#cabecalho-artigo h3  {
+font-size: 12px;
+color: #606060;
+
+
+    }
+    .direita{
+        text-align: right;
+    }
+    aside#lateral h1{
+        font-family: "fontlogo", sans-serif;
+        font-size: 20px;
+        color: #606060;
+        margin-top: 0px;
+
+    }
+    aside#lateral h2{
+        background-color: #606060;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+
+    }
+   article#noticia-principal {
+    padding-top: 30px;
+}
+article#cabecalho-artigo {
+    border-bottom: 1px #606060 solid;
+    padding-bottom: 20px;
+}
+header#cabecalho-artigo {
+    padding: 50px 0 20px 0;
+}
+nav#menu{
+    padding: 50px 0 20px 0;
+}
+
+
+
+    </style>
+
+
+
+
+
+</head>
+<script> 
+function mudaFoto (foto){
+document.getElementById("icone").src= foto;
+
+}
+
+</script>
+<body>
+	<div id="interface"> 
+
+	<header id="cabecalho">
+		<hgroup>
+<h1>Google Glass</h1>
+<h2>A revolução do Google está chegando</h2>
+</hgroup>
+
+<img id="icone" src="_imagens/multimidia.png" style="width:200px; height:200px;"> &nbsp;
+
+<nav id="menu">
+<h2>Menu Principal</h2>
+<ul type="disc">
+<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html">Home</a></li>
+<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="specs.html">Especificações</a></li>
+<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html">Fotos</a></li>
+<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html">Multimídia</a></li>
+<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+
+</ul>
+</nav>
+</header>
+
+<section id="corpo-full">
+    <article id="noticia-principal">
+        <header	 id="cabecalho-artigo">
+        	<hgroup>
+
+<h3>Glass > Multimídia</h3>
+<h1>Sons e Vídeos</h1>
+<h3 class="direita"> Atualizado 2026 </h3>
+            </hgroup>
+        </header>
+<div id="tv-radio">
+<audio id="musica" controls>
+    <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg">
+        <source src="_media/2009-lovers-carvings-bibio.m4a" type="audio/x-aac">
+            <source src="_media/2009-lovers-carvings-bibio.ogg" type="audio/ogg">
+                Desculpe, mas não foi possível carregar o áudio.
+
+</audio>
+<video id="filme" controls poster="_imagens/video-mini03.jpg">
+    <source src="_media/getting-started.mp4" type="video/mp4">
+        <source src="_media/getting-started.webm" type="video/webm">
+            <source src="_media/getting-started.ogv" type="video/ogg">
+                Desculpe, mas não foi possível carregar o vídeo.
+
+</video>
+
+</div>
+
+    </article>
+</section>
+
+<footer id="rodape">
+<p>Copyright &copy; 2026 - by João Victor </br>
+Facebook | Twitter </p>
+</footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/specs.css">
+    <meta charset="UTF-8">
+    <title>Tudo sobre Google Glass</title>
+    <style>
+body{
+    background-color: white;
+    background-size: 4000px;
+    font-family: arial, sans-serif;
+}
+
+p {
+    text-align: justify;
+    text-indent: 50px;
+    }
+a{
+color: #606060;
+text-decoration: none;
+
+}
+a:hover{
+text-decoration: underline;
+}
+
+
+figure.foto-legenda{
+    position: relative;
+    border: 3px solid white;
+    box-shadow: 1px 1px 4px black;
+    width: 380px;
+    height: auto;
+    right:35px;
+}
+figure.foto-legenda img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+figure.foto-legenda figcaption{
+    background-color: rgba(0,0,0,.4);
+    position:absolute;
+    top:0px;
+    color:white;
+    width: 100%;
+    height: 100%;
+    transition: opacity 1s;
+    opacity: 0;
+    pointer-events: none;
+    padding: 10px;
+    box-sizing: border-box;  
+}
+figure.foto-legenda:hover figcaption{
+    opacity: 1;
+}
+
+/* formatação nav */ /* toda vez q tiver um id, trocar pela # */
+nav#menu ul{
+list-style: none;
+text-transform: uppercase; /* deixa tudo em maiucuslo*/
+position: absolute; /* posso mover para onde eu quiser*/
+top: 0px;
+right: 750px;
+}
+nav#menu li{
+    display: inline-block; /*deixa um na frente do outro*/
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+nav#menu{
+    display: block;
+}
+nav#menu h1{
+display: none;
+}
+nav#menu li:hover{
+    background-color: #606060;
+    text-decoration: underline;
+}
+nav#menu a{
+    color: black;
+    text-decoration:none;
+}
+nav#menu a:hover{
+    color: white;
+}
+header#cabecalho {
+    border-bottom: 1px #606060 solid;
+    height:179px;
+    background-image:url(glass-logo-peq.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+    background-position: left center;
+}
+header#cabecalho img#icone{
+position:absolute;
+left:1400px;
+top:50px;
+}
+header#cabecalho h1{
+    font-family:"fontlogo", sans-serif;
+    font-size: 30px;
+    color: #606060 ;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.6);
+    padding: 0px;
+    margin-bottom: 0px;
+}
+header#cabecalho h2{
+   font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    color: #888888;
+    padding: 0px;
+    margin-top: 0px;
+}
+@font-face{
+    font-family:"fontlogo";
+    src: url("bubblegum-sans-regular.otf");
+}
+.titillium-web-regular {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+section#corpo{
+
+    display:block;
+    width:800px;
+    float: left;
+    border-right:1px solid black;
+    padding-right:10px;
+}
+aside#lateral{
+    display:block;
+    width:760px;
+    float:right;
+    background-color: #dddddd;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
+}
+footer#rodape{
+
+    clear: both;
+    border-top: 1px solid black;
+}
+footer#rodape{
+    text-align:center;
+
+}
+table#tabela{
+
+    border: 1px solid grey;
+ border-spacing:0px;
+ margin-left: auto;
+ margin-right: auto;
+}
+table#tabela td{
+
+    border: 1px solid grey;
+    padding:10px;
+    text-align: center;
+}
+table#tabela td.ce{
+color:white;
+background-color:grey;
+vertical-align: top;
+font-weight:bold;
+}
+table#tabela td.cd{
+    background-color: #cecece;
+
+
+}
+table#tabela caption{
+    color: #888888;
+    font-size: 15px;
+    font-weight: bolder;
+}
+table#tabela caption span{
+    display:block;
+    float:right;
+    color:black;
+    font-size:10px;
+    margin-top:10px;
+}
+
+article#noticia h2{
+    font-size: 15px;
+    color: grey;
+    background-color: #dddddd;
+    padding: 5px 0px 5px 0px;
+    margin: 10px 0px 10px 10px;
+}
+header#cabecalho-artigo h1  {
+
+font-family: "fontlogo", sans-serif ;
+font-size: 20px;
+color: #606060;
+margin-bottom: 0px;
+margin-top: 0px;
+}
+header#cabecalho-artigo h2  {
+font-size: 13px;
+color: #cecece;
+background-color: white;
+margin: 0px;
+}
+
+header#cabecalho-artigo h3  {
+font-size: 12px;
+color: #606060;
+
+    }
+    .direita{
+        text-align: right;
+    }
+    aside#lateral h1{
+        font-family: "fontlogo", sans-serif;
+        font-size: 20px;
+        color: #606060;
+        margin-top: 0px;
+
+    }
+    aside#lateral h2{
+        background-color: #606060;
+        font-size: 15px;
+        color: white;
+        padding: 10px;
+
+    }
+
+
+
+    </style>
+</head>
+<script> 
+function mudaFoto (foto){
+document.getElementById("icone").src= foto;
+
+}
+
+
+</script>
+<body>
+
+<div id="interface"> 
+
+<header id="cabecalho">
+<hgroup>
+<h1>Google Glass</h1>
+<h2>A revolução do Google está chegando</h2>
+</hgroup>
+
+<img id="icone" src="_imagens/especificacoes.png" style="width:200px; height:200px;"> &nbsp;
+
+<nav id="menu">   
+<h1>Menu Principal</h1>
+<ul type="disc">
+  
+<li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+<li onmouseover="mudaFoto('_imagens/especificacoes.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+<li onmouseover="mudaFoto('_imagens/fotos.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+<li onmouseover="mudaFoto('_imagens/multimidia.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="multimidia.html">Multimídia</a></li>
+<li onmouseover="mudaFoto('_imagens/contato.png')" onmouseout="mudaFoto('_imagens/especificacoes.png')"><a href="fale-conosco.html">Fale conosco</a></li>
+
+</ul>
+</nav>
+
+
+
+<section id="corpo-full">
+    <article id="norticia-principal">
+        <header id="cabecalho-artigo">
+            <hrgoup>
+    <h3>Glass > Especificações</h3>
+<h1>Raio-X no Google Glass</h1>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+<hgroup>
+</header>
+<p>Clique em qualquer área destacada da imagem para ter mais informações sobre os recursos do Google Glass. Qualquer ponto vermelho vai te levar a um lugar cheio de novas informações.</p>
+
+<section id="conteudo">
+ <img src="_imagens/glass-esquema-marcado.jpg" usemap="#meumapa">
+ <map name="meumapa">
+    <area shape="rect" coords="179, 202, 270, 260" href="google.html#tela" target="janela">
+    <area shape="circle" coords="158, 243, 12 " href="google.html#camera" target="janela">
+    <area shape="circle" coords="73, 52, 12" href="google.html#bateria" target="janela">
+    <area shape="poly" coords="28, 143, 83, 216, 84, 249, 27, 169" href="google.html#sensores" target="janela">
+</map>
+ <iframe src="google.html" name="janela" id="frame-spec"></iframe> 
+</section>
+</hgroup>
+</article>
+</section>
+
+<footer id="rodape">
+<p>Copyright &copy; 2026 - by João Victor </br>
+</footer>
+</div>
+
+</body>
+</html>
